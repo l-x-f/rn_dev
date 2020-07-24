@@ -64,6 +64,7 @@ export default class FlatListDemo extends Component {
           style={styles.indicator}
           size={'large'}
           animating={true}
+          color='#ff0'
         />
         <Text>正在加载更多</Text>
       </View>

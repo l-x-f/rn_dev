@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     'comma-dangle': 0,
     semi: 0,
-    'no-alert': 0
+    'no-alert': 0,
+    'jsx-quotes': ['error', 'prefer-single']
   }
 }

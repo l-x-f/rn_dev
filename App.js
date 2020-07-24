@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log('__DEV__', __DEV__)
+  }
+
   //切换前后摄像头
   switchCamera() {
     let _cameraType = ''
@@ -53,12 +57,12 @@ class App extends Component {
             source={{ uri: this.state.cameraInfo.uri }}
           />
           <Button
-            title="切换摄像头"
+            title='切换摄像头'
             style={styles.button}
             onPress={this.switchCamera.bind(this)}
           />
           <Button
-            title="拍照"
+            title='拍照'
             style={styles.button}
             onPress={this.takePicture.bind(this)}
           />
